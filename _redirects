@@ -1,0 +1,5 @@
+# Redirect www to non-www
+https://www.el1express.com/* https://el1express.com/:splat 301!
+
+# Custom 404 page
+/* /404.html 404
