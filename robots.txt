@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://el1express.com/sitemap.xml
