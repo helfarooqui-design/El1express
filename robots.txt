@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://elexpresss.org/sitemap.xml
