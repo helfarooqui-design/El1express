@@ -4,6 +4,9 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>EL1Express Pricing | Courier & Delivery Rates Houston</title>
+<link rel="icon" href="favicon.ico" sizes="any"/>
+<link rel="icon" href="favicon.png" type="image/png"/>
+<link rel="apple-touch-icon" href="apple-touch-icon.png"/>
 <meta name="keywords" content="EL1Express pricing, Houston courier rates, delivery contract pricing Houston"/>
 <meta name="description" content="EL1Express delivery pricing. Recurring routes from $125/week. Per-event catering delivery from $65. On-demand from $18. No hidden fees."/>
 <link rel="canonical" href="https://elexpresss.org/pricing.html"/>
@@ -20,7 +23,7 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
 nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(13,12,10,.88);backdrop-filter:blur(12px);display:flex;align-items:center;justify-content:space-between;padding:0 48px;height:72px;transition:background .3s}
 nav.scrolled{background:rgba(250,248,243,.96);box-shadow:0 1px 0 rgba(0,0,0,.06)}
 nav.scrolled .nav-links a{color:var(--charcoal)}
-nav.scrolled .nav-cta{background:var(--black)}
+nav.scrolled .nav-cta{background:var(--black);color:var(--cream)}
 .logo{display:flex;align-items:center;text-decoration:none}
 .logo-img{height:56px;width:auto;display:block}
 .nav-links{display:flex;gap:24px;list-style:none}
@@ -29,7 +32,7 @@ nav.scrolled .nav-cta{background:var(--black)}
 .nav-cta{background:var(--yellow);color:var(--black);padding:10px 20px;font-size:11px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;font-weight:700;transition:all .2s;white-space:nowrap}
 .nav-cta:hover{background:#d4920a}
 .nav-hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px}
-.nav-hamburger span{display:block;width:22px;height:1.5px;background:var(--cream)}
+.nav-hamburger span{display:block;width:22px;height:1.5px;background:var(--cream)}nav.scrolled .nav-hamburger span{background:var(--black)}
 #mobileMenu{display:none;position:fixed;inset:0;background:var(--black);z-index:2000;flex-direction:column;align-items:center;justify-content:center;gap:24px}
 #mobileMenu a{color:var(--cream);text-decoration:none;font-family:'Cormorant Garamond',serif;font-size:26px;font-style:italic}
 #mobileMenu a.highlight{color:var(--yellow)}
@@ -195,7 +198,7 @@ h2 em{font-style:italic;color:var(--muted)}
 <body>
 <a href="https://wa.me/13466686922" style="position:fixed;bottom:28px;right:28px;z-index:999;width:56px;height:56px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,.4);text-decoration:none;" target="_blank"><svg viewBox="0 0 24 24" width="28" height="28" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
 <div id="mobileMenu">
-  <button id="menuClose">✕</button>
+  <button id="menuClose" type="button" aria-label="Close menu">✕</button>
   <a href="index.html">Home</a>
   <a href="about.html">About</a>
   <a href="food-bakery.html">Food & Bakery</a>
@@ -227,7 +230,7 @@ h2 em{font-style:italic;color:var(--muted)}
     <li><a href="contact.html">Contact</a></li>
   </ul>
   <a href="contact.html" class="nav-cta">Get a Quote</a>
-  <button class="nav-hamburger" id="menuOpen"><span></span><span></span><span></span></button>
+  <button class="nav-hamburger" id="menuOpen" type="button" aria-label="Open menu"><span></span><span></span><span></span></button>
 </nav>
 
 <section class="hero">
@@ -516,7 +519,7 @@ h2 em{font-style:italic;color:var(--muted)}
     </ul></div>
     <div class="footer-col"><h4>Contact</h4><ul>
       <li><a href="tel:+13466686922">(346) 668-6922</a></li>
-      <li><a href="/cdn-cgi/l/email-protection#6a020b07100b022a0f060f121a180f1919194405180d"><span class="__cf_email__" data-cfemail="09616864736861496c656c71797b6c7a7a7a27667b6e">[email&#160;protected]</span></a></li>
+      <li><a href="mailto:hamzah@elexpresss.org">hamzah@elexpresss.org</a></li>
       <li><a href="https://wa.me/13466686922">WhatsApp</a></li>
       <li><a href="contact.html">Get a Quote</a></li>
     </ul></div>
@@ -526,7 +529,7 @@ h2 em{font-style:italic;color:var(--muted)}
     <p style="color:rgba(255,255,255,.3);font-size:11px">Cold-Chain Certified · HIPAA-Aware · Houston Metro</p>
   </div>
 </footer>
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 const nav=document.getElementById('nav');
 window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>40));
 const mm=document.getElementById('mobileMenu');
@@ -575,7 +578,7 @@ window.addEventListener('scroll',()=>{
         <div style="width:8px;height:8px;border-radius:50%;background:#4ade80;animation:cpulse 2s infinite"></div>
         <span style="font-size:13px;font-weight:600;color:white">EL1Express Assistant</span>
       </div>
-      <a href="chat.html" target="_blank" style="font-family:monospace;font-size:9px;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.4);text-decoration:none">Full chat</a>
+      <a href="contact.html" style="font-family:monospace;font-size:9px;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.4);text-decoration:none">Contact</a>
     </div>
     <div id="chat-panel-messages">
       <div class="cp-msg ai"><div class="cp-bubble">Hey! I can help with pricing, coverage, and booking. What do you need?</div></div>
@@ -676,37 +679,25 @@ window.addEventListener('scroll',()=>{
     }
   }
 
-  window.cpSend = async function(text) {
+  window.cpSend = function(text) {
     if (!text || !text.trim()) return;
     var input = document.getElementById("cp-input");
-    input.value = "";
-    var userText = text.trim();
-    cpAppend("user", userText);
-    cpHistory.push({ role: "user", content: userText });
-    cpSetTyping(true);
-    try {
-      var response = await fetch("https://api.anthropic.com/v1/messages", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          model: "claude-haiku-4-5-20251001",
-          max_tokens: 150,
-          system: CP_SYSTEM,
-          messages: cpHistory
-        })
-      });
-      var data = await response.json();
-      cpSetTyping(false);
-      var reply = (data.content && data.content[0] && data.content[0].text)
-        ? data.content[0].text
-        : "For fastest help call Hamzah at (346) 668-6922!";
-      cpHistory.push({ role: "assistant", content: reply });
-      cpAppend("ai", reply);
-    } catch (err) {
-      cpSetTyping(false);
-      cpAppend("ai", "Call or text Hamzah at (346) 668-6922 for immediate help!");
-    }
+    if (input) input.value = "";
+    cpAppend("user", text.trim());
+    cpAppend("ai", "Call or text Hamzah at (346) 668-6922 for immediate help!");
   };
 
   document.addEventListener("DOMContentLoaded", function() {
-    var input = document.getElemen
+    var input = document.getElementById("cp-input");
+    if (!input) return;
+    input.addEventListener("keydown", function(e) {
+      if (e.key === "Enter") {
+        e.preventDefault();
+        window.cpSend(input.value);
+      }
+    });
+  });
+})();
+</script>
+</body>
+</html>

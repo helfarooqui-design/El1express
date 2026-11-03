@@ -8,14 +8,17 @@
   <meta property="og:title" content="EL1Express | Food & Bakery Delivery Houston"/>
   <meta property="og:description" content="EL1Express delivers for cafés, bakeries, and food vendors across Houston. Recurring contracted routes starting at $125/week."/>
   <meta property="og:type" content="website"/>
-  <meta property="og:url" content="https://el1express.com/food-bakery.html"/>
+  <meta property="og:url" content="https://elexpresss.org/food-bakery.html"/>
   <meta property="og:site_name" content="EL1Express"/>
   <meta name="twitter:card" content="summary"/>
   <meta name="twitter:title" content="EL1Express | Food & Bakery Delivery Houston"/>
   <meta name="twitter:description" content="Contracted food and bakery delivery routes across Houston. Multi-location café service, vendor-to-café connections, flat weekly retainer pricing. Serving Galleria, Midtown, Heights and more."/>
-  <link rel="canonical" href="https://el1express.com/food-bakery.html"/>
+  <link rel="canonical" href="https://elexpresss.org/food-bakery.html"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>EL1Express | Food & Bakery Delivery Houston</title>
+<link rel="icon" href="favicon.ico" sizes="any"/>
+<link rel="icon" href="favicon.png" type="image/png"/>
+<link rel="apple-touch-icon" href="apple-touch-icon.png"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Instrument+Sans:wght@400;500;600&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet"/>
@@ -290,7 +293,7 @@ footer{background:var(--charcoal);color:rgba(255,255,255,.45);padding:64px 48px 
   "@type": "Service",
   "name": "Food & Bakery Delivery Houston \u2014 EL1Express",
   "description": "Contracted food and bakery delivery routes across Houston. Multi-location caf\u00e9 service, vendor-to-caf\u00e9 connections, flat weekly retainer pricing. Serving Galleria, Midtown, Heights and more.",
-  "url": "https://el1express.com/food-bakery.html"
+  "url": "https://elexpresss.org/food-bakery.html"
 }
 </script>
 </head>
@@ -305,7 +308,7 @@ footer{background:var(--charcoal);color:rgba(255,255,255,.45);padding:64px 48px 
 
 <!-- MOBILE MENU -->
 <div id="mobileMenu">
-  <button id="menuClose">✕</button>
+  <button id="menuClose" type="button" aria-label="Close menu">✕</button>
 
   <a href="index.html" style="color:var(--cream);text-decoration:none;font-family:'Cormorant Garamond',serif;font-size:30px;font-style:italic">Home</a>
   <a href="about.html" style="color:var(--cream);text-decoration:none;font-family:'Cormorant Garamond',serif;font-size:30px;font-style:italic">About</a>
@@ -331,7 +334,7 @@ footer{background:var(--charcoal);color:rgba(255,255,255,.45);padding:64px 48px 
     <li><a href="contact.html">Contact</a></li>
   </ul>
   <a href="contact.html" class="nav-cta">Book a Delivery</a>
-  <button class="nav-hamburger" id="menuOpen"><span></span><span></span><span></span></button>
+  <button class="nav-hamburger" id="menuOpen" type="button" aria-label="Open menu"><span></span><span></span><span></span></button>
 </nav>
 
 <!-- HERO -->
@@ -715,8 +718,8 @@ footer{background:var(--charcoal);color:rgba(255,255,255,.45);padding:64px 48px 
       <h4>Company</h4>
       <ul>
         <li><a href="about.html">About Us</a></li>
-        <li><a href="el1express.html#coverage">Coverage</a></li>
-        <li><a href="el1express.html#pricing">Pricing</a></li>
+        <li><a href="coverage.html">Coverage</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
         <li><a href="drive-with-us.html">Drive With Us</a></li>
       </ul>
     </div>
@@ -724,8 +727,8 @@ footer{background:var(--charcoal);color:rgba(255,255,255,.45);padding:64px 48px 
       <h4>Contact</h4>
       <ul>
         <li><a href="tel:+13466686922">(346) 668-6922</a></li>
-        <li><a href="/cdn-cgi/l/email-protection#2a424b47504b426a4f464f525a584f5959590445584d"><span class="__cf_email__" data-cfemail="274f464a5d464f67424b425f57554254545409485540">[email&#160;protected]</span></a></li>
-        <li><a href="el1express.html#coverage">Houston, TX</a></li>
+        <li><a href="mailto:hamzah@elexpresss.org">hamzah@elexpresss.org</a></li>
+        <li><a href="coverage.html">Houston, TX</a></li>
       </ul>
     </div>
   </div>
@@ -734,35 +737,6 @@ footer{background:var(--charcoal);color:rgba(255,255,255,.45);padding:64px 48px 
     <p>Privacy Policy · Terms of Service</p>
   </div>
 </footer>
-
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-// Nav scroll
-const nav=document.getElementById('nav');
-window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',window.scrollY>40));
-
-// Mobile menu
-const openMobileMenu=()=>document.getElementById('mobileMenu').classList.add('open');
-const closeMobileMenu=()=>document.getElementById('mobileMenu').classList.remove('open');
-document.getElementById('menuOpen').addEventListener('click',openMobileMenu);
-document.getElementById('menuClose').addEventListener('click',closeMobileMenu);
-
-// Custom cursor
-const cur=document.getElementById('cur'),ring=document.getElementById('curRing');
-if(window.matchMedia('(pointer:fine)').matches&&cur){
-  let mx=0,my=0,rx=0,ry=0;
-  document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cur.style.transform=`translate(${mx-4}px,${my-4}px)`});
-  (function loop(){rx+=(mx-rx-15)*.12;ry+=(my-ry-15)*.12;ring.style.transform=`translate(${rx}px,${ry}px)`;requestAnimationFrame(loop)})();
-}
-
-// FAQ accordion
-document.querySelectorAll('.faq-q').forEach(btn=>{
-  btn.addEventListener('click',()=>{
-    const item=btn.parentElement;
-    const wasOpen=item.classList.contains('open');
-    document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));
-    if(!wasOpen)item.classList.add('open');
-  });
-});
-
-// Smooth scroll
-document.querySelect
+<script src="js/site.js"></script>
+</body>
+</html>
