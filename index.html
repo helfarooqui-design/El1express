@@ -8,14 +8,17 @@
   <meta property="og:title" content="EL1Express | Houston Courier & Logistics Network"/>
   <meta property="og:description" content="EL1Express LLC — Houston's professional courier and logistics network. Food, bakery, catering, wholesale, and medical delivery. Our network serves Royal Sonesta, Westin Downtown, Arwa Coffee House, Platr, TX Parts, Sterling Express & more."/>
   <meta property="og:type" content="website"/>
-  <meta property="og:url" content="https://el1express.com/"/>
+  <meta property="og:url" content="https://elexpresss.org/"/>
   <meta property="og:site_name" content="EL1Express"/>
   <meta name="twitter:card" content="summary"/>
   <meta name="twitter:title" content="EL1Express | Houston Courier & Logistics Network"/>
   <meta name="twitter:description" content="EL1Express is Houston's professional courier and logistics network. Food & bakery delivery, wholesale logistics, and medical courier services. Flat weekly contracts. Call Hamzah at (346) 668-6922."/>
-  <link rel="canonical" href="https://el1express.com/"/>
+  <link rel="canonical" href="https://elexpresss.org/"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>EL1Express | Houston Courier & Logistics Network</title>
+<link rel="icon" href="favicon.ico" sizes="any"/>
+<link rel="icon" href="favicon.png" type="image/png"/>
+<link rel="apple-touch-icon" href="apple-touch-icon.png"/>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Instrument+Sans:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
 <style>
 :root{--cream:#f5f0e8;--offwhite:#faf8f3;--beige:#e8e0d0;--beige-mid:#d4c9b5;--sand:#c9bba4;--yellow:#F5A800;--black:#0d0c0a;--ink:#1a1814;--charcoal:#2e2b26;--muted:#7a7468;--faint:#b0a898;--yellow:#f5c518;--yellow-dim:#d4a914}
@@ -38,11 +41,11 @@ nav.scrolled{padding:14px 48px;background:rgba(250,248,243,.95);backdrop-filter:
 .logo-sub{font-family:'DM Mono',monospace;font-size:7px;letter-spacing:4px;color:var(--muted);text-transform:uppercase}
 .nav-links{display:flex;gap:32px;list-style:none}
 .nav-links a{font-family:'DM Mono',monospace;font-size:9.5px;letter-spacing:2.5px;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:color .2s}
-.nav-links a:hover{color:var(--black)}
+.nav-links a:hover{color:var(--black)}nav:not(.scrolled) .nav-links a{color:var(--sand)}nav:not(.scrolled) .nav-links a:hover{color:var(--cream)}
 .nav-cta{font-family:'DM Mono',monospace;font-size:9.5px;letter-spacing:2px;text-transform:uppercase;background:var(--black);color:var(--cream);padding:11px 22px;text-decoration:none;border:1px solid var(--black);transition:background .25s,color .25s,border-color .25s;white-space:nowrap}
 .nav-cta:hover{background:var(--yellow);color:var(--black);border-color:var(--yellow)}
 .nav-hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px}
-.nav-hamburger span{display:block;width:24px;height:1.5px;background:var(--black)}
+.nav-hamburger span{display:block;width:24px;height:1.5px;background:var(--cream)}nav.scrolled .nav-hamburger span{background:var(--black)}
 .mobile-menu{display:none;position:fixed;inset:0;background:var(--offwhite);z-index:490;flex-direction:column;align-items:center;justify-content:center;gap:32px}
 .mobile-menu.open{display:flex}
 .mobile-menu a{font-family:'Cormorant Garamond',serif;font-size:38px;font-weight:300;color:var(--black);text-decoration:none;letter-spacing:-1px}
@@ -282,7 +285,7 @@ footer{background:var(--ink);padding:72px 48px 36px;border-top:1px solid rgba(25
   "@type": "LocalBusiness",
   "name": "EL1Express",
   "description": "EL1Express is Houston's professional courier and logistics network. Food & bakery delivery, wholesale logistics, and medical courier services. Flat weekly contracts. Call Hamzah at (346) 668-6922.",
-  "url": "https://el1express.com/",
+  "url": "https://elexpresss.org/",
   "telephone": "+13466686922",
   "email": "hamzah@elexpresss.org",
   "address": {
@@ -340,7 +343,7 @@ footer{background:var(--ink);padding:72px 48px 36px;border-top:1px solid rgba(25
 <div class="cur-ring" id="curRing"></div>
 
 <div id="mobileMenu" style="display:none;position:fixed;inset:0;background:#0d0c0a;z-index:2000;flex-direction:column;align-items:center;justify-content:center;gap:28px;padding:80px 20px 40px;overflow-y:auto">
-  <button id="menuClose" style="position:absolute;top:24px;right:28px;background:none;border:none;color:#f5f0e8;font-size:28px;cursor:pointer">✕</button>
+  <button id="menuClose" type="button" aria-label="Close menu" style="position:absolute;top:24px;right:28px;background:none;border:none;color:#f5f0e8;font-size:28px;cursor:pointer">✕</button>
   <a href="index.html" style="color:#f5f0e8;text-decoration:none;font-family:'Cormorant Garamond',serif;font-size:28px;font-style:italic">Home</a>
   <a href="about.html" style="color:#f5f0e8;text-decoration:none;font-family:'Cormorant Garamond',serif;font-size:28px;font-style:italic">About</a>
   <a href="food-bakery.html" style="color:#f5f0e8;text-decoration:none;font-family:'Cormorant Garamond',serif;font-size:28px;font-style:italic">Food & Bakery</a>
@@ -372,7 +375,7 @@ footer{background:var(--ink);padding:72px 48px 36px;border-top:1px solid rgba(25
     <li><a href="contact.html">Contact</a></li>
   </ul>
   <a href="contact.html" class="nav-cta">Get a Quote</a>
-  <button class="nav-hamburger" id="menuOpen"><span></span><span></span><span></span></button>
+  <button class="nav-hamburger" id="menuOpen" type="button" aria-label="Open menu"><span></span><span></span><span></span></button>
 </nav>
 
 <!-- HERO -->
@@ -678,7 +681,7 @@ footer{background:var(--ink);padding:72px 48px 36px;border-top:1px solid rgba(25
       <div class="contact-divider"></div>
       <div class="contact-info-item">
         <div class="ci-label">Email</div>
-        <a href="/cdn-cgi/l/email-protection#93fbf2fee9f2fbd3f6fff6ebe3e1f6e0e0e0bdfce1f4" class="ci-val"><span class="__cf_email__" data-cfemail="acc4cdc1d6cdc4ecc9c0c9d4dcdec9dfdfdf82c3decb">[email&#160;protected]</span></a>
+        <a href="mailto:hamzah@elexpresss.org" class="ci-val">hamzah@elexpresss.org</a>
         <div class="ci-note">Replies within the hour during business hours</div>
       </div>
       <div class="contact-divider"></div>
@@ -696,30 +699,41 @@ footer{background:var(--ink);padding:72px 48px 36px;border-top:1px solid rgba(25
 
     <div>
       <div class="contact-form" id="contactForm">
+        <div class="form-row full">
+          <div class="form-field">
+            <label for="finquiry">Inquiry type</label>
+            <select id="finquiry" name="inquiry_type" required>
+              <option value="" disabled selected>Select inquiry type…</option>
+              <option value="Driver inquiry">Driver inquiry</option>
+              <option value="Vendor inquiry">Vendor inquiry</option>
+              <option value="Route inquiry">Route inquiry</option>
+            </select>
+          </div>
+        </div>
         <div class="form-row">
           <div class="form-field">
             <label for="fname">Your Name</label>
-            <input id="fname" type="text" placeholder="First & last name"/>
+            <input id="fname" name="name" type="text" placeholder="First & last name" autocomplete="name"/>
           </div>
           <div class="form-field">
             <label for="fbiz">Business Name</label>
-            <input id="fbiz" type="text" placeholder="Company or brand"/>
+            <input id="fbiz" name="business" type="text" placeholder="Company or brand"/>
           </div>
         </div>
         <div class="form-row">
           <div class="form-field">
             <label for="fphone">Phone</label>
-            <input id="fphone" type="tel" placeholder="(713) 000-0000"/>
+            <input id="fphone" name="phone" type="tel" placeholder="(713) 000-0000" autocomplete="tel"/>
           </div>
           <div class="form-field">
             <label for="femail">Email</label>
-            <input id="femail" type="email" placeholder="you@company.com"/>
+            <input id="femail" name="email" type="email" placeholder="you@company.com" autocomplete="email"/>
           </div>
         </div>
         <div class="form-row full">
           <div class="form-field">
             <label for="fservice">Service Needed</label>
-            <select id="fservice">
+            <select id="fservice" name="service">
               <option value="" disabled selected>Select a service…</option>
               <option>Food & Bakery Delivery</option>
               <option>Wholesale Logistics</option>
@@ -733,10 +747,12 @@ footer{background:var(--ink);padding:72px 48px 36px;border-top:1px solid rgba(25
         <div class="form-row full">
           <div class="form-field">
             <label for="fmsg">Tell Us About Your Route</label>
-            <textarea id="fmsg" placeholder="How many locations? How often? Any specific requirements?"></textarea>
+            <textarea id="fmsg" name="message" placeholder="How many locations? How often? Any specific requirements?"></textarea>
           </div>
         </div>
-        <button class="form-submit" id="formSubmit">
+        <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;height:0;width:0;opacity:0"/>
+        <p class="el1-form-error" id="contactFormError" role="alert" hidden></p>
+        <button class="form-submit" id="formSubmit" type="button">
           <span class="form-submit-text">Send Inquiry</span>
           <span class="form-submit-arrow">→</span>
         </button>
@@ -783,8 +799,8 @@ footer{background:var(--ink);padding:72px 48px 36px;border-top:1px solid rgba(25
       <h4>Contact</h4>
       <ul>
         <li><a href="tel:+13466686922">(346) 668-6922</a></li>
-        <li><a href="/cdn-cgi/l/email-protection#6e060f03140f062e0b020b161e1c0b1d1d1d40011c09"><span class="__cf_email__" data-cfemail="b9d1d8d4c3d8d1f9dcd5dcc1c9cbdccacaca97d6cbde">[email&#160;protected]</span></a></li>
-        <li><a href="el1express.html#coverage">Houston, TX</a></li>
+        <li><a href="mailto:hamzah@elexpresss.org">hamzah@elexpresss.org</a></li>
+        <li><a href="coverage.html">Houston, TX</a></li>
       </ul>
     </div>
   </div>
@@ -794,7 +810,7 @@ footer{background:var(--ink);padding:72px 48px 36px;border-top:1px solid rgba(25
   </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 const cur=document.getElementById('cur'),ring=document.getElementById('curRing');
 if(window.matchMedia('(pointer:fine)').matches&&cur&&ring){
   let mx=0,my=0,rx=0,ry=0;
@@ -832,20 +848,7 @@ const counterObs=new IntersectionObserver(entries=>{
 },{threshold:.3});
 document.querySelectorAll('.stats-band').forEach(el=>counterObs.observe(el));
 
-// Form submit handler
-const formSubmitBtn=document.getElementById('formSubmit');
-if(formSubmitBtn) formSubmitBtn.addEventListener('click',()=>{
-  const fname=(document.getElementById('fname')||{value:''}).value;
-  const fphone=(document.getElementById('fphone')||{value:''}).value;
-  const femail=(document.getElementById('femail')||{value:''}).value;
-  if(!fname||(!fphone&&!femail)){
-    alert('Please enter your name and at least a phone number or email.');
-    return;
-  }
-  const formSuccess=document.getElementById('formSuccess');
-  if(formSuccess) formSuccess.style.display='flex';
-  formSubmitBtn.style.display='none';
-});
+// Inquiry forms are sent by js/inquiry.js after Web3Forms accepts them.
 
 // Smooth scroll
 document.querySelectorAll('a[href^="#"]').forEach(a=>{
@@ -889,5 +892,7 @@ document.addEventListener('DOMContentLoaded',()=>{
 
 
 
+<script src="js/form-config.js"></script>
+<script src="js/inquiry.js"></script>
 </body>
 </html>

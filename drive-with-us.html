@@ -8,14 +8,17 @@
   <meta property="og:title" content="Drive With EL1Express | Houston Courier Driver Jobs"/>
   <meta property="og:description" content="Join the EL1Express driver network in Houston. Deliver for food, bakery, wholesale, and medical clients. Weekly pay."/>
   <meta property="og:type" content="website"/>
-  <meta property="og:url" content="https://el1express.com/drive-with-us.html"/>
+  <meta property="og:url" content="https://elexpresss.org/drive-with-us.html"/>
   <meta property="og:site_name" content="EL1Express"/>
   <meta name="twitter:card" content="summary"/>
   <meta name="twitter:title" content="Drive With EL1Express | Houston Courier Driver Jobs"/>
   <meta name="twitter:description" content="Join the EL1Express driver network in Houston. $7–8 per delivery, weekly pay, flexible hours, your own car. Food, wholesale, and medical courier routes available."/>
-  <link rel="canonical" href="https://el1express.com/drive-with-us.html"/>
+  <link rel="canonical" href="https://elexpresss.org/drive-with-us.html"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>Drive With EL1Express | Houston Courier Driver Jobs</title>
+<link rel="icon" href="favicon.ico" sizes="any"/>
+<link rel="icon" href="favicon.png" type="image/png"/>
+<link rel="apple-touch-icon" href="apple-touch-icon.png"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Instrument+Sans:wght@400;500;600&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet"/>
@@ -203,7 +206,7 @@ footer{background:var(--charcoal);color:rgba(255,255,255,.45);padding:64px 48px 
   "@type": "JobPosting",
   "name": "Drive With EL1Express \u2014 Houston Courier Driver Jobs",
   "description": "Join the EL1Express driver network in Houston. $7\u20138 per delivery, weekly pay, flexible hours, your own car. Food, wholesale, and medical courier routes available.",
-  "url": "https://el1express.com/drive-with-us.html"
+  "url": "https://elexpresss.org/drive-with-us.html"
 }
 </script>
 </head>
@@ -216,7 +219,7 @@ footer{background:var(--charcoal);color:rgba(255,255,255,.45);padding:64px 48px 
 <div id="curRing" style="position:fixed;width:30px;height:30px;border:1px solid rgba(13,12,10,.25);border-radius:50%;pointer-events:none;z-index:9998;top:0;left:0"></div>
 
 <div id="mobileMenu">
-  <button id="menuClose">✕</button>
+  <button id="menuClose" type="button" aria-label="Close menu">✕</button>
 
   <a href="index.html" style="color:var(--cream);text-decoration:none;font-family:'Cormorant Garamond',serif;font-size:30px;font-style:italic">Home</a>
   <a href="about.html" style="color:var(--cream);text-decoration:none;font-family:'Cormorant Garamond',serif;font-size:30px;font-style:italic">About</a>
@@ -241,7 +244,7 @@ footer{background:var(--charcoal);color:rgba(255,255,255,.45);padding:64px 48px 
     <li><a href="contact.html">Contact</a></li>
   </ul>
   <a href="#apply" class="nav-cta">Apply Now</a>
-  <button class="nav-hamburger" id="menuOpen"><span></span><span></span><span></span></button>
+  <button class="nav-hamburger" id="menuOpen" type="button" aria-label="Open menu"><span></span><span></span><span></span></button>
 </nav>
 
 <!-- HERO -->
@@ -447,29 +450,38 @@ footer{background:var(--charcoal);color:rgba(255,255,255,.45);padding:64px 48px 
     <h2>Apply to<br/><em>Drive Today</em></h2>
     <p class="apply-sub">Fill out the form below and Hamzah will be in touch within 24 hours to discuss available routes and get you started.</p>
     <div class="apply-form" id="applyForm">
+      <div class="form-group">
+        <label class="form-label" for="dinquiry">Inquiry type</label>
+        <select class="form-input" id="dinquiry" name="inquiry_type" required>
+          <option value="" disabled selected>Select inquiry type…</option>
+          <option value="Driver inquiry">Driver inquiry</option>
+          <option value="Vendor inquiry">Vendor inquiry</option>
+          <option value="Route inquiry">Route inquiry</option>
+        </select>
+      </div>
       <div class="form-row">
         <div class="form-group">
-          <label class="form-label">First Name</label>
-          <input type="text" class="form-input" id="fname" placeholder="Your first name"/>
+          <label class="form-label" for="fname">First Name</label>
+          <input type="text" class="form-input" id="fname" name="first_name" placeholder="Your first name" autocomplete="given-name"/>
         </div>
         <div class="form-group">
-          <label class="form-label">Last Name</label>
-          <input type="text" class="form-input" id="lname" placeholder="Your last name"/>
+          <label class="form-label" for="lname">Last Name</label>
+          <input type="text" class="form-input" id="lname" name="last_name" placeholder="Your last name" autocomplete="family-name"/>
         </div>
       </div>
       <div class="form-row">
         <div class="form-group">
-          <label class="form-label">Phone Number</label>
-          <input type="tel" class="form-input" id="fphone" placeholder="(713) 000-0000"/>
+          <label class="form-label" for="fphone">Phone Number</label>
+          <input type="tel" class="form-input" id="fphone" name="phone" placeholder="(713) 000-0000" autocomplete="tel"/>
         </div>
         <div class="form-group">
-          <label class="form-label">Email</label>
-          <input type="email" class="form-input" id="femail" placeholder="you@email.com"/>
+          <label class="form-label" for="femail">Email</label>
+          <input type="email" class="form-input" id="femail" name="email" placeholder="you@email.com" autocomplete="email"/>
         </div>
       </div>
       <div class="form-group">
-        <label class="form-label">Vehicle Type</label>
-        <select class="form-input" id="fvehicle">
+        <label class="form-label" for="fvehicle">Vehicle Type</label>
+        <select class="form-input" id="fvehicle" name="vehicle">
           <option value="">Select your vehicle type</option>
           <option>Sedan</option>
           <option>SUV / Crossover</option>
@@ -479,8 +491,8 @@ footer{background:var(--charcoal);color:rgba(255,255,255,.45);padding:64px 48px 
         </select>
       </div>
       <div class="form-group">
-        <label class="form-label">Route Type Interest</label>
-        <select class="form-input" id="froute">
+        <label class="form-label" for="froute">Route Type Interest</label>
+        <select class="form-input" id="froute" name="route_interest">
           <option value="">What kind of routes interest you?</option>
           <option>Food & Bakery Routes</option>
           <option>Medical Courier</option>
@@ -490,10 +502,12 @@ footer{background:var(--charcoal);color:rgba(255,255,255,.45);padding:64px 48px 
         </select>
       </div>
       <div class="form-group">
-        <label class="form-label">Availability</label>
-        <input type="text" class="form-input" id="favail" placeholder="e.g. Weekday mornings, weekends, flexible..."/>
+        <label class="form-label" for="favail">Availability</label>
+        <input type="text" class="form-input" id="favail" name="availability" placeholder="e.g. Weekday mornings, weekends, flexible..."/>
       </div>
-      <button class="form-submit" id="applySubmit">Submit Application →</button>
+      <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;height:0;width:0;opacity:0"/>
+      <p class="el1-form-error" id="applyFormError" role="alert" hidden></p>
+      <button class="form-submit" id="applySubmit" type="button">Submit Application →</button>
     </div>
     <div id="applySuccess">
       <strong style="display:block;margin-bottom:8px;font-size:16px">Application Received ✓</strong>
@@ -503,7 +517,7 @@ footer{background:var(--charcoal);color:rgba(255,255,255,.45);padding:64px 48px 
     <div class="apply-direct">
       <a href="tel:+13466686922" class="ad-btn">📞 Call (346) 668-6922</a>
       <a href="sms:+13466686922" class="ad-btn">💬 Text Hamzah</a>
-      <a href="/cdn-cgi/l/email-protection#3a525b57405b527a5f565f424a485f4949491455485d" class="ad-btn">✉️ Email Us</a>
+      <a href="mailto:hamzah@elexpresss.org" class="ad-btn">✉️ Email Us</a>
     </div>
   </div>
 </section>
@@ -531,8 +545,8 @@ footer{background:var(--charcoal);color:rgba(255,255,255,.45);padding:64px 48px 
       <h4>Company</h4>
       <ul>
         <li><a href="about.html">About Us</a></li>
-        <li><a href="el1express.html#coverage">Coverage</a></li>
-        <li><a href="el1express.html#pricing">Pricing</a></li>
+        <li><a href="coverage.html">Coverage</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
         <li><a href="drive-with-us.html">Drive With Us</a></li>
       </ul>
     </div>
@@ -540,8 +554,8 @@ footer{background:var(--charcoal);color:rgba(255,255,255,.45);padding:64px 48px 
       <h4>Contact</h4>
       <ul>
         <li><a href="tel:+13466686922">(346) 668-6922</a></li>
-        <li><a href="/cdn-cgi/l/email-protection#2c444d41564d446c494049545c5e495f5f5f02435e4b"><span class="__cf_email__" data-cfemail="d3bbb2bea9b2bb93b6bfb6aba3a1b6a0a0a0fdbca1b4">[email&#160;protected]</span></a></li>
-        <li><a href="el1express.html#coverage">Houston, TX</a></li>
+        <li><a href="mailto:hamzah@elexpresss.org">hamzah@elexpresss.org</a></li>
+        <li><a href="coverage.html">Houston, TX</a></li>
       </ul>
     </div>
   </div>
@@ -550,21 +564,8 @@ footer{background:var(--charcoal);color:rgba(255,255,255,.45);padding:64px 48px 
     <p>Privacy Policy · Terms of Service</p>
   </div>
 </footer>
-
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-const nav=document.getElementById('nav');
-window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',window.scrollY>40));
-document.getElementById('menuOpen').addEventListener('click',()=>document.getElementById('mobileMenu').classList.add('open'));
-document.getElementById('menuClose').addEventListener('click',()=>document.getElementById('mobileMenu').classList.remove('open'));
-const cur=document.getElementById('cur'),ring=document.getElementById('curRing');
-if(window.matchMedia('(pointer:fine)').matches&&cur){
-  let mx=0,my=0,rx=0,ry=0;
-  document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cur.style.transform=`translate(${mx-4}px,${my-4}px)`});
-  (function loop(){rx+=(mx-rx-15)*.12;ry+=(my-ry-15)*.12;ring.style.transform=`translate(${rx}px,${ry}px)`;requestAnimationFrame(loop)})();
-}
-document.getElementById('applySubmit').addEventListener('click',()=>{
-  const fname=document.getElementById('fname').value.trim();
-  const fphone=document.getElementById('fphone').value.trim();
-  if(!fname||!fphone){alert('Please enter your name and phone number.');return;}
-  document.getElementById('applyForm').style.display='none';
-  document.getElementById('applySuccess').sty
+<script src="js/site.js"></script>
+<script src="js/form-config.js"></script>
+<script src="js/inquiry.js"></script>
+</body>
+</html>
